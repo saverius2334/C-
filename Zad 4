@@ -1,0 +1,41 @@
+/* Zadania nr 4  */
+
+#include "pch.h"
+#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	//Napisz instrukcje, ktora definiuje obiekt typu vector<int> o nazwiev i odrazu inicjalizuje go wartosciami 30, 40, 50.
+
+	int a = { 4 };
+	vector<int> v { 30, 40, 50 };	
+
+	//Napisz definicje wektora o naziwe k, w ktorym mozna przechowywac nazwiska kilku Twoich kolegów
+
+	vector<string> k{ "Wawrzyniak", "Jankowski", "Wojcik" };
+
+	// Napisz instrukcje, ktora w wektorze z poprzedniego cwiczenia zamieni nazwisko zapisane w elemencie o indeksie 0 na nazwisko "Henryk Sienkiewicz"
+
+	k[0] = "Henryk Sienkiewicz";
+
+	// Napisz instrukcje, ktora do konca wektora k z poprzedniego cwiczenia dodaje nowe nazwisko
+
+	k.push_back("Chopin");
+
+	/* Napisz petle zakresowe for, ktora wyswietli kolejno wszystkie nazwiska z wektora k ( z poprzedniego cwiczenia) i rownoczesnie do kazdego z nich doda dopisek " - nie przyjedzie"
+	Nastepnie znowu wypisz tresc tego wektora, tym razem zwyklym for */
+
+	for(auto elem : k)
+	{
+		cout << elem << endl;
+	}
+
+	for (unsigned int i = { 0 }; i <= k.size(); i++)
+	{
+		cout << k[i] <<endl;
+	}
+}
