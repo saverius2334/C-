@@ -1,3 +1,10 @@
+/* Zadanie nr 1: Napisz program, który z pomocą jednej instrukcji "cout" napisze na ekranie następujący tekst:
+ witamy
+ na
+ p
+ o
+ kladzie */
+
 #include "pch.h"
 #include <iostream>
 
