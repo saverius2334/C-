@@ -1,0 +1,27 @@
+/* Zadanie nr 3: Napisz program, ktory bedzie wypisywal na ekranie kolejne liczby alfabetu. Pierwszych oseim ( A - H ) ma byc wypisywanych po dwie litery w jednym rzedzie, a co do nastepnych,
+to program ma zadac uzytkownikowi pytanie ( po ile liter w rzedzie ma wypisywac dalej). Zaleznie od tej odpowiedzi nastepne litery maja byc wypisywane wedlug nowej zasady.*/
+
+#include "pch.h"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	for (char a = 'A'; a <= 'H'; a++)
+	{
+		cout << a << a << endl;
+	}
+	int b;
+	cout << "Po ile liter w rzędzie mam teraz wypisywac?\n";
+	cin >> b;
+	char h = 'H';
+	for (h; h <= 'Z'; h++)
+	{
+		for (int i = 1; i <= b; i++)
+		{
+			cout << h;
+		}
+		cout << endl;
+	}
+}
