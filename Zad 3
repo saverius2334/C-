@@ -18,7 +18,7 @@ int main()
 	char h = 'H';
 	for (h; h <= 'Z'; h++)
 	{
-		for (int i = 1; i <= b; i++)
+		for (int i = { 1 }; i <= b; i++)
 		{
 			cout << h;
 		}
